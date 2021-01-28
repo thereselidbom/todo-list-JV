@@ -1,0 +1,83 @@
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(120deg, #5d97e2, #d88771);
+    color:rgb(104, 103, 103);
+}
+
+header {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+header, form {
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: none;
+}
+
+small{
+    color:#fff;
+    font-size: 18px;
+}
+
+.todo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    padding: 1rem;
+    border-radius: 0.7rem;
+    box-shadow: 5px 5px 10px 0 #333;
+    margin: 1.5rem 0;
+  
+  }
+  .todo:hover {
+    box-shadow: 5px 5px 10px 2px #333;
+  }
+  .todo:active {
+    box-shadow: 5px 5px 6px 0 #333;
+  }
+  .completed h3{
+    text-decoration: line-through;
+    color: #8d8d8d;
+     opacity: 0.5;
+  }
+  .todo h3 {
+    flex: 1;
+    cursor: pointer;
+  }
+
+
+  form button {
+    color: #ff6f47;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+    padding:0.5rem;
+    background: #fff;
+  }
+  form button:hover {
+    background: #ff6f47;
+    color: white;
+  }
+
+  .trash i.fa-trash {
+    background: #ff6f47;
+    color: white;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+
+  .fa-trash {
+  pointer-events: none;
+}
