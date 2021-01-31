@@ -11,11 +11,13 @@ form.addEventListener('submit', (e) => {
     e.preventDefault();
     if(input.value === '') {
       error.innerText = 'Var vänlig skriv något i fältet'
-    }else{
+    } else if (input.value.length < 2) {
+      error.innerText = 'Fältet måste innehålla minst 2 tecken'    }
+    else{
       
       error.innerText = ''
       createTodo(input.value);
-      listTodos();
+
       input.value= ''
     }
    

@@ -45,7 +45,7 @@ small{
   .todo:active {
     box-shadow: 5px 5px 6px 0 #333;
   }
-  .completed h3{
+  .completed {
     text-decoration: line-through;
     color: #8d8d8d;
      opacity: 0.5;
